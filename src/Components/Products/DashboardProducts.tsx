@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { GetProductsListHome } from "../api/authApi";
 import { CircularProgress, Stack } from "@mui/material";
 import { useMutation } from "react-query";
@@ -8,10 +8,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { wrap } from "module";
 // import "./navbar.css";
 
-const Navbar = () => {
+const Products = () => {
   useEffect(() => {
     getMenuList();
   }, [])
@@ -86,4 +85,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Products;

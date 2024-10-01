@@ -1,25 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import { refreshAccessTokenFn } from "../api/authApi";
-import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
-import PersonAdd from '@mui/icons-material/PersonAdd';
-import Settings from '@mui/icons-material/Settings';
-import Logout from '@mui/icons-material/Logout';
 import { Button, CircularProgress } from "@mui/material";
-import axios from "axios";
 import { useMutation } from "react-query";
-// import "./navbar.css";
 
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
   useEffect(() => {
     getMenuList();
   }, [])
@@ -79,8 +65,7 @@ const Navbar = () => {
             {/* 2nd menu part  */}
 
             <div
-              className={
-                showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+              className={ "menu-link"
               }>
               <ul>
                 {menuList?.map((item: any, index: number) => (
