@@ -43,7 +43,11 @@ const Navbar = () => {
       {
         loading ? <CircularProgress /> 
         :
-       <></>
+       <>
+       <div>
+        
+       </div>
+       </>
       }
 
     </>
