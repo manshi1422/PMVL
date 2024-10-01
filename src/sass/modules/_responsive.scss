@@ -1,0 +1,733 @@
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .mainCt {
+    // min-height: auto;
+  }
+  .menuBar {
+    .logoImg {
+      width: 140px;
+    }
+    .iconM {
+      position: relative;
+      top: -7px;
+      right: -10px;
+    }
+  }
+  .bank {
+    .bankName {
+      .bankData {
+        .bankheading {
+          font-size: 18px;
+          height: 60px;
+        }
+        .ifsc {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .accountNo {
+          font-size: 18px;
+          line-height: 28px;
+        }
+        .accounttype {
+          font-size: 10px;
+          line-height: 14px;
+        }
+        .branch {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .primary {
+          .primary-sec {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 4px 6px;
+            p {
+              margin: 0px;
+            }
+          }
+          button {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .reKycEsign {
+    .popInfoTC {
+      font-size: 12px;
+      h4 {
+        font-size: 14px;
+        margin: 15px 0px 3px 0;
+      }
+      label span {
+        font-size: 12px;
+      }
+    }
+  }
+  .section-timeline {
+    .timeline {
+      justify-content: left !important;
+      padding: 20px 0px 20px 10px;
+      .steps-status {
+        justify-content: center !important;
+        margin-bottom: 20px;
+      }
+      .steps-ic {
+        width: 30.2%;
+        margin: 5px;
+        button {
+          min-height: 60px;
+          padding: 8px;
+          flex-direction: column;
+
+          width: 100%;
+          font-size: 12px !important;
+          svg {
+            margin: 0px;
+          }
+        }
+      }
+      .BtnSec {
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        padding: 0px 15px;
+      }
+      .coBtn {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+    .headingRkyc {
+      margin-bottom: 20px;
+      text-align: center;
+      h2 {
+        margin: 0px;
+        font-size: 14px;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .headingSectio {
+    h1 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 80px;
+      margin: 66px 0px 5px;
+    }
+  }
+
+  .loginF {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobileShow {
+    display: block;
+  }
+  .mobileH {
+    display: none;
+  }
+  .logInP {
+    padding: 0 20px 0 !important;
+  }
+  .titleDig {
+    padding: 14px 24px 14px !important;
+    font-size: 18px;
+  }
+  .signin-container {
+    h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    button,
+    .button-primary-custom {
+      margin-top: 0px;
+    }
+    .infoteXt {
+      font-size: 10px;
+    }
+    .signin-box {
+      .button-primary-custom {
+        width: 100%;
+      }
+    }
+  }
+  .signInLink {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .OTP-timer {
+    margin-top: 20px;
+  }
+  .loginLogo {
+    display: block;
+    img {
+      width: 80% !important;
+    }
+  }
+  header.menuBar {
+    button.MuiIconButton-edgeStart {
+      display: none;
+    }
+  }
+  .showTT {
+    display: none;
+  }
+  .mainCt::before {
+    content: "";
+    height: 0px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background: #fff;
+    position: absolute;
+    display: block;
+  }
+
+  .profiLEInfo {
+    display: none;
+  }
+  .dialogsegment {
+    .CloseBtn,
+    .backButton {
+      top: 10px !important;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
+  .bottomAlignDialog {
+    .MuiDialog-paper {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+      overflow: inherit;
+      &::before {
+        content: "";
+        height: 3px;
+        left: 0;
+        right: 0;
+        width: 100px;
+        display: block;
+        top: -13px;
+        position: absolute;
+        background: $white;
+        margin: 0px auto;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  // .segmentActivationSteps
+  // {}
+  .popmodal {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0px;
+    border-radius: 10px;
+    position: relative !important;
+    // top: 64px !important;
+    bottom: 0px !important;
+    max-height: 87vh;
+    left: 0px;
+    overflow: auto;
+  }
+  .checks {
+    margin-top: 0px !important;
+  }
+  .customedigio {
+    width: 96% !important;
+    margin: 0px auto !important;
+    float: none !important;
+    left: 0;
+    right: 0;
+  }
+  .custome_ModalTATA {
+    width: 100% !important;
+  }
+  .dialogsegment .CloseBtn {
+    left: 88%;
+    top: 10px !important;
+    // position: relative !important;
+  }
+  .custome_ModalTATA_main {
+    max-height: 92vh;
+    bottom: 0;
+    width: 100% !important;
+    &::before {
+      content: "";
+      height: 3px;
+      left: 0;
+      right: 0;
+      width: 100px;
+      display: block;
+      top: -15px;
+      position: absolute;
+      background: $white;
+      margin: 0px auto;
+      border-radius: 5px;
+    }
+  }
+  .dialogsegment .segmentActivationSteps {
+    min-width: inherit;
+    padding: 0px 15px 1px;
+  }
+  .otherMessage {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  // .popUpmessage {
+  //   display: block;
+  // }
+
+  .riskpoint {
+    padding: 10px 10px 1px 0px;
+    ul {
+      margin: 0px;
+    }
+  }
+  .risk .riskpoint li {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  .closeRisk {
+    position: absolute !important;
+    top: -66px;
+    right: -10px;
+    padding-left: 18px !important;
+  }
+  .risk .MuiFormControlLabel-label {
+    color: #1a1a1a !important;
+    font-size: 12px;
+  }
+  .formSectionActivation {
+    position: relative;
+    .hideBTNS {
+      bottom: 0px;
+    }
+  }
+  .groupSegment {
+    padding: 10px 5px 5px;
+    margin-right: 0px;
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    display: inline-block;
+    margin: 0px 5px;
+    .formContrl .customCheckbox .MuiFormControlLabel-label {
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      left: 0;
+      top: 10px;
+    }
+    .customCheckbox {
+      position: relative;
+      margin: 5px 10px;
+      width: 45% !important;
+      float: none !important;
+      margin: 0px auto;
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px;
+      b {
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .MuiButtonBase-root {
+        width: 100% !important;
+        height: 35px !important;
+      }
+    }
+
+    .groupSegmentName {
+      display: block;
+      margin: 15px 20px 0px;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+
+  .innerprofilesection {
+    padding: 15px;
+  }
+  header.menuBar {
+    // background: #f4fbff !important;
+  }
+
+  .MainGrid:hover .swiper-button-prev {
+    opacity: 0 !important;
+    transition: 0.5s;
+  }
+  .MainGrid:hover .swiper-button-next:hover {
+    opacity: 0 !important;
+  }
+  .MainGrid:hover .swiper-button-prev:hover {
+    opacity: 0 !important;
+  }
+  .MainGrid:hover .swiper-button-next {
+    opacity: 0 !important;
+    transition: 0.5s;
+  }
+  .signatureSection {
+    img {
+      width: 40%;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 10px;
+    // position: absolute;
+    bottom: 0;
+    z-index: 1;
+    span {
+      float: none;
+      display: inline;
+    }
+  }
+  .deactive {
+    filter: grayscale(1);
+    opacity: 0.5;
+    svg {
+      display: none;
+    }
+  }
+  .AcionBtn button {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 0px;
+  }
+  .stepperDialog {
+    .MuiDialogContent-root {
+      padding: 15px;
+    }
+    .title {
+      padding: 15px;
+    }
+    .MuiDialog-paper {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      overflow: inherit;
+      position: fixed;
+      right: 0;
+      width: 100%;
+      max-width: inherit;
+      // padding-bottom: 50px;
+      &:before {
+        background: #fff;
+        border-radius: 5px;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: -15px;
+        width: 100px;
+      }
+    }
+    .oldData {
+      padding: 5px 0px !important;
+      flex-basis: 100%;
+    }
+    .title {
+      font-size: 18px;
+      p {
+        font-size: 12px !important;
+      }
+    }
+  }
+  .Form-stepper {
+    .address {
+      margin: 0px;
+      width: 100%;
+    }
+    .AcionBtn {
+      position: fixed;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 2px 2px 10px -7px rgba(0, 0, 0, 0.5);
+      padding: 10px 10px 10px;
+      button {
+        margin: 0px auto;
+        width: 100%;
+      }
+    }
+    .selfie {
+      .selfieData {
+        .Data {
+          background-color: transparent;
+          box-shadow: none;
+          padding: 0px;
+          // border: 0.654px dashed #bababa;
+          ul {
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: nowrap;
+          }
+          li {
+            padding: 0px 5px 0px 0px;
+            margin-bottom: 1px;
+            display: flex;
+            svg {
+              color: $greenofficial;
+              width: 15px;
+              position: relative;
+              bottom: 1px;
+            }
+            div {
+              &:first-child {
+                min-width: 20px !important;
+              }
+            }
+            span {
+              font-size: 12px !important;
+            }
+            &:last-child {
+              // display: block;
+            }
+            button {
+              font-size: 10px !important;
+            }
+          }
+        }
+        .ImgData {
+          min-height: auto;
+          padding: 10px 10px 5px;
+          text-align: center;
+          background-color: $white;
+          border: 0px dashed #bababa;
+          margin: 0px 0 0 0;
+          // border-radius: 10px !important;
+          // height: 136px;
+          // width: 136px;
+          img {
+            width: 136px;
+            display: inline-block;
+            border-radius: 10px !important;
+            background: #fff;
+            border: 0.654px dashed #bababa;
+            padding: 5px;
+            box-shadow: none;
+            height: auto;
+          }
+          .playerSelfie {
+            width: 136px !important;
+            position: relative;
+            top: 5px;
+          }
+          .selfieSkelton {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .form-container .headingVal {
+    margin-bottom: 10px !important;
+    font-size: 14px;
+  }
+  .nomnni .nomAction {
+    top: 11px;
+  }
+  .customedigio {
+    float: none !important;
+    left: 0;
+    margin: 0 auto !important;
+    right: 0;
+    width: 100% !important;
+    bottom: 0px !important;
+    top: auto !important;
+  }
+  .bank {
+    .form-input-custom {
+      .MuiSelect-select {
+      }
+      label {
+        line-height: 23px !important;
+      }
+    }
+    .fileUpload {
+      label {
+        top: -7px;
+      }
+      .MuiInputLabel-shrink {
+        top: -1px;
+      }
+    }
+  }
+  .newbankAdd {
+    form {
+      padding: 10px;
+    }
+  }
+  .form-container .prim p {
+    font-size: 10px;
+  }
+  .form-container {
+    .incomeData {
+      .checkBox {
+        width: 31%;
+        b {
+          font-weight: 400;
+          font-size: 10px;
+          padding: 0px 5px;
+          line-height: normal;
+        }
+        .MuiButtonBase-root {
+        }
+      }
+    }
+
+    .form-input-custom {
+      label {
+        line-height: 12px;
+        background: #ffffff;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+      .MuiInputLabel-shrink {
+        line-height: 25px !important;
+        font-size: 12px;
+      }
+      input {
+        height: 23px;
+        padding: 8.5px 14px;
+        text-transform: initial !important;
+      }
+    }
+    .dropdown .MuiInputBase-root {
+      height: 40px;
+    }
+    .fileType {
+      .MuiFormLabel-root {
+        // line-height: 27px !important;
+        // top: 10px;
+      }
+      .MuiSelect-select {
+        height: 23px;
+        line-height: 25px !important;
+      }
+    }
+  }
+  .conatiaineMaxW {
+    padding: 0px 10px !important;
+  }
+  .dobC::after {
+    width: 70%;
+  }
+  .submitedStatus {
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .signin-container .signin-box {
+    input {
+      height: 33px;
+      padding: 8.5px 14px;
+    }
+    .form-input-custom {
+      margin-bottom: 15px !important;
+      width: 100%;
+    }
+    .or {
+      margin-bottom: 15px !important;
+    }
+  }
+  .sign .signData {
+    .ImgData img {
+      width: auto;
+      height: auto;
+      display: inline-block;
+      border-radius: 8px !important;
+      background: #fff;
+      border: 0.654px dashed #bababa;
+      height: 100px;
+      min-width: 145px;
+    }
+    .Data li {
+      padding: 0px 5px 0px 0px;
+      margin-bottom: 1px;
+      span {
+        font-size: 12px;
+      }
+      div:first-child {
+        min-width: 20px !important;
+      }
+      svg {
+        color: #209e49;
+        width: 15px;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+  }
+  .skeltonCard {
+    gap: 5px !important;
+    .cardSkel {
+      width: 30.2% !important;
+      margin: 0px;
+    }
+  }
+}
+@media screen and (max-width: 460px) and (min-width: 320px) {
+  .dobC::after {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 461px) {
+  .dobC::after {
+    width: 78% !important;
+  }
+}
+.groupSegment.Commodity .dNoneBorder.NCDEX .MuiButtonBase-root {
+  width: 100% !important;
+}
+@media screen and (max-width: 380px) and (min-width: 320px) {
+  .closeRisk {
+    position: absolute !important;
+    top: -66px;
+    right: -10px;
+    padding-left: 18px !important;
+    padding-right: 0px !important;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 768px) {
+}
+@media screen and (max-width: 1280px) and (min-width: 1120px) {
+}
+@media screen and (max-width: 1120px) and (min-width: 768px) {
+}
+@media screen and (max-width: 1119px) and (min-width: 769px) {
+  .customedigio {
+    width: 56% !important;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 1360px) and (min-width: 1120px) {
+  .customedigio {
+    width: 56% !important;
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1400px) {
+  .customedigio {
+    width: 32% !important;
+    top: 40px;
+  }
+}

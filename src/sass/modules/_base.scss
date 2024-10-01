@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "credit";
+  src: url("../../fonts/credit.otf") format("truetype");
+  font-weight: 1001;
+  font-style: normal;
+}
+@font-face {
+  font-family: "credit";
+  src: url("../../fonts/credit.ttf") format("truetype");
+  font-weight: 1002;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap");
+// $theme-color-primary: #000;
+$theme-color-primary-blue-dark: #004770;
+$theme-color-primary-blue-light: #1177bd;
+$theme-color-primary-blue-light3: #a0c9e5;
+$color-grey1: #b3b3b3;
+$color-grey2: #999999;
+$color-red: #ff4949;
+$font-color-dark1: #1a1a1a;
+$white: #ffffff;
+$greenofficial: #209e49;
+$sidebarColor: rgb(0 71 112 / 2%);
+$theme-font-color-secondary: #000;
+$font-stack: "Poppins", sans-serif !important;
+$primary-color: #0fb4bb;
+$tracker-color-success: #00c2a8;
+$tracker-color-error: #f37d7e;
+$primary-color-dark: rgb(14, 34, 79);
+$theme-button-checked: #596edc;
+$blue-font-color: #596edc;
+$theme-font-color-LightOne: #a3abbc;
+$theme-font-color-LightDark: #898989;
+$theme-font-color-login: #7d87a0;
+$background-body: #fafafa;
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: #1a1a1a;
+  background: #fafafa;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 14px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.home {
+  text-align: center;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+ 
+
+/* navbar style start  */
+
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px -96px 0px -23px, rgba(0, 0, 0, 0.3) 0px -5px 62px -32px;
+}
+
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media {
+  grid-column: 4/5;
+}
+
+.social-media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-media ul li {
+  text-align: right;
+}
+
+.social-media ul li:first-child {
+  grid-column: 2/3;
+}
+
+/* ----------- Grid part ends ----------------- */
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menu-link ul li {
+  font-size: 1.8rem;
+  // cursor: pointer;
+}
+
+.menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+}
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.social-media ul li {
+  font-size: 1.8rem;
+}
+
+.social-media .hamburger-menu {
+  display: none;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+/* hero section   */
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section p {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* responsive css style  */
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  .logo,
+  .menu-link ul,
+  .social-media ul {
+    height: 8rem;
+  }
+}
+
+/* responsive css style  */
+@media (max-width: 998px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 7rem;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-menu-link {
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+  .social-media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .social-media .social-media-desktop {
+    height: 0;
+    display: none;
+  }
+
+  .social-media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  /* hero section  */
+
+  .hero-section h1 {
+    font-size: 3.8rem;
+  }
+}

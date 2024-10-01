@@ -1,0 +1,20 @@
+.footer {
+  background-color: #f5f5f7;
+  color: #004770;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 300;
+  span {
+    float: right;
+    color: #004770;
+    a{
+      color: #004770;
+    }
+    .MuiSvgIcon-root {
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
+}
