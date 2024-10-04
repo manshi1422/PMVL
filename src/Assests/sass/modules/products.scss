@@ -7,6 +7,10 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    padding: 20px;
+    height: 331px;
+   
 }
 .product{
     min-width: 200px !important;
@@ -25,3 +29,6 @@
         }
     }
 }
+.swiper-pagination-bullets{
+    bottom: 16px !important;
+  }

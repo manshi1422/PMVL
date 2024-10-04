@@ -41,7 +41,8 @@ const Navbar = () => {
     <div className="poster">
       {
         loading ? <CircularProgress /> :
-          <img src="https://via.placeholder.com/1600x600"/>
+     
+          <img src="https://via.placeholder.com/1600x400"/>
          
       }
 

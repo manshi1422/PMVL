@@ -9,6 +9,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 // import "./navbar.css";
+import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Products = () => {
   useEffect(() => {
@@ -48,37 +57,81 @@ const Products = () => {
     <>
       {
         loading ? <CircularProgress /> :
-          <Stack
-            direction={{ xs: 'row', sm: 'row' }}
-            spacing={{ xs: 1, sm: 4, md: 4 }}
-            className="products"
-          > {productList?.map((item: any, index: number) => (
+          <>
+            <h2>Top Products</h2>
+            <Swiper
+              spaceBetween={10}
+              // slidesPerView={5}
+              navigation
+              modules={[
+                Navigation,
+                Pagination,
+                Scrollbar,
+                A11y,
+                Mousewheel,
+              ]}
+              mousewheel={true}
+              pagination={{ clickable: true }}
+              // scrollbar={{ draggable: true }}
+              // onSwiper={(swiper) => swiper}
+              className="products"
+              
+              breakpoints={{
+                320: {
+                  // When screen width is 640px or smaller (mobile devices)
+                  slidesPerView: 1,
+                },
+                360: {
+                  // When screen width is 640px or smaller (mobile devices)
+                  slidesPerView: 3,
+                },
+                640: {
+                  // When screen width is 640px or smaller (mobile devices)
+                  slidesPerView: 3,
+                },
+                768: {
+                  // When screen width is 768px or smaller (tablets)
+                  slidesPerView: 3,
+                },
+                1024: {
+                  // When screen width is 1024px or smaller (small desktops)
+                  slidesPerView: 4,
+                },
+                1200: {
+                  // When screen width is 1200px or smaller (larger desktops)
+                  slidesPerView: 5,
+                },
+              }}
+            >
+              {productList?.map((item: any, index: number) => (
 
-            <div className="product">
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={item?.image}
-                  title="green iguana"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {item?.name}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    {item?.price}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  {/* <Button size="small">Wishlist</Button> */}
-                  <Button size="small">Add to cart</Button>
-                </CardActions>
-              </Card>
-            </div>
+                <SwiperSlide>
+                  <div className="product">
+                    <Card sx={{ maxWidth: 345 }}>
+                      <CardMedia
+                        sx={{ height: 140 }}
+                        image={item?.image}
+                        title="green iguana"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          {item?.name}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                          {item?.price}
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        {/* <Button size="small">Wishlist</Button> */}
+                        <Button size="small">Add to cart</Button>
+                      </CardActions>
+                    </Card>
+                  </div>
+                </SwiperSlide>
 
-          ))}
-
-          </Stack>
+              ))}</Swiper>
+            
+          </>
       }
 
     </>
